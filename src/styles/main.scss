@@ -1,0 +1,10 @@
+@use "fonts";
+@use "globals";
+@use "normalize";
+@use "utils";
+@use "variables";
+@use "helpers" as *;
+
+@use "../components/Header/Header";
+@use "../components/Footer/Footer";
+@use "../components/Navigation/Navigation";

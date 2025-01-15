@@ -1,0 +1,32 @@
+@use "../../styles/helpers" as *;
+
+.footer {
+  @include flex-center;
+  @include fluid-text(10, 16);
+
+  background-color: var(--color-dark-gray);
+  border-top: solid rem(5) var(--color-accent);
+  color: var(--color-light);
+  padding: rem(20);
+
+  &__list {
+    @include flex-center;
+
+    &-item {
+      position: relative;
+      margin: rem(5);
+      margin-bottom: 0;
+    }
+
+    &-item:not(:last-child):after {
+      position: absolute;
+      display: block;
+      background-color: var(--color-accent);
+      content: "";
+      right: -6.5px;
+      top: 0;
+      width: rem(2);
+      height: 100%;
+    }
+  }
+}

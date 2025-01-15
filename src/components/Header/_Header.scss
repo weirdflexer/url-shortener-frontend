@@ -1,0 +1,18 @@
+@use "../../styles/helpers" as *;
+
+.header {
+  @include flex-center;
+
+  &__inner {
+    margin: rem(20);
+  }
+}
+
+.header__link {
+  font-family: "Jersey";
+  color: var(--color-accent);
+  font-size: rem(70);
+  -webkit-text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+  -moz-text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}

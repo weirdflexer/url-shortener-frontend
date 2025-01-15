@@ -1,0 +1,69 @@
+@use "helpers" as *;
+
+html {
+  background-color: var(--color-light-gray);
+  font-family: sans-serif;
+}
+
+body {
+  height: 100%;
+}
+
+div#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+a,
+button,
+label,
+input,
+textarea,
+select,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  color: inherit;
+
+  @include hover {
+    color: var(--color-accent);
+  }
+
+  &[class] {
+    text-decoration: none;
+  }
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+h1,
+.h1 {
+  @include fluid-text(60, 43);
+}
+
+h2,
+.h2 {
+  @include fluid-text(40, 36);
+}
+
+h3,
+.h3 {
+  @include fluid-text(30, 26);
+}
+
+h4,
+.h4 {
+  @include fluid-text(20, 18);
+}

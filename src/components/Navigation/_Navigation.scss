@@ -1,0 +1,12 @@
+@use "../../styles/helpers" as *;
+
+.navigation {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: rem(40);
+
+  @include mobile {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-row: repeat(3, 1fr);
+  }
+}
